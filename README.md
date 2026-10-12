@@ -13,7 +13,7 @@ The project combines data from two sources:
 Raw data is preserved in the `data/raw/` folder and is not modified by the project code.
 
 ## How to Run
-1. Open the project notebook in Google Colab.
+1. Open the "[DSA405_002_FA26_P2_mjain23.ipynb](https://colab.research.google.com/drive/1JfLs5wEH0jLQXwqZtiBfSMd-TsmAqpb9?usp=sharing)" project notebook in Google Colab.
 2. Run all cells from top to bottom.
 3. The notebook audits and cleans the Best Picture data and documents each cleaning decision.
 4. Later project milestones will combine the cleaned Best Picture data with IMDb ratings data.
