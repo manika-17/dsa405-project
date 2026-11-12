@@ -180,7 +180,7 @@ python -m pip install -r requirements.txt
 
 Open the following notebook:
 
-`notebooks/DSA405_P4_FA26_mjain23.ipynb`
+`DSA405_P4_FA26_mjain23.ipynb`
 
 Before downloading Wikipedia data, ensure that the `CONTACT` variable contains a valid contact email address or Wikimedia user page.
 
