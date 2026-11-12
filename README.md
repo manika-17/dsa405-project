@@ -160,11 +160,9 @@ DSA405-Project/
 Clone the GitHub repository to your computer.
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/manika-17/dsa405-project
 cd DSA405-BestPicture-IMDb
 ```
-
-Replace `YOUR_GITHUB_REPOSITORY_URL` with the actual URL of this repository.
 
 ### Step 2: Install Dependencies
 
