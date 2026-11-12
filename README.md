@@ -114,37 +114,44 @@ Additional limitations include:
 - The analysis only includes Best Picture nominees, not all movies released during the study period.
 - The analysis does not establish a causal relationship between winning Best Picture and receiving higher IMDb ratings.
 
+
 ## Repository Structure
 
+The repository is organized as follows:
+
 ```text
-DSA405-BestPicture-IMDb/
+DSA405-Project/
 |
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
-|
-|-- notebooks/
-|   |-- DSA405_P4_FA26_mjain23.ipynb
+|-- assignments/
+|   |-- labs/
+|       |-- DSA405_Lab04_CleaningII_FA26...
+|       |-- DSA405_SkillsSelfCheck_FA26.ipynb
 |
 |-- data/
 |   |-- raw/
-|   |-- processed/
+|       |-- Academy Award for Best Picture...
+|       |-- SOURCES.md
 |
-|-- figures/
-|
-|-- P4_written_report_revised.docx
+|-- .gitignore
+|-- DSA405_002_FA26_P1_mjain236...
+|-- DSA405_002_FA26_P3_mjain23...
+|-- DSA405_P2_AuditCleaningLog_FA26...
+|-- DSA405_P4_FA26_mjain23.ipynb
+|-- README.md
 ```
 
 ### File Descriptions
 
-- **README.md:** Project overview, data sources, findings, and reproducibility instructions.
-- **requirements.txt:** Python packages required to run the analysis.
-- **.gitignore:** Excludes large downloaded datasets, temporary files, and other files that should not be committed.
-- **notebooks/DSA405_P4_FA26_mjain23.ipynb:** Main notebook containing data collection, cleaning, integration, verification, and analysis.
-- **data/raw/:** Locally downloaded raw data files.
-- **data/processed/:** Generated cleaned datasets and audit outputs.
-- **figures/:** Generated visualizations.
-- **P4_written_report_revised.docx:** Written report documenting the methodology, findings, limitations, and reflections.
+- **README.md:** Provides the project overview, research question, data sources, findings, and instructions for reproducing the analysis.
+- **DSA405_P4_FA26_mjain23.ipynb:** The final project notebook containing data collection, cleaning, integration, verification, and analysis.
+- **DSA405_002_FA26_P1_mjain236...:** Initial project milestone documenting the original research question and project planning.
+- **DSA405_P2_AuditCleaningLog_FA26...:** Milestone 2 notebook containing data auditing, cleaning, and documentation.
+- **DSA405_002_FA26_P3_mjain23...:** Milestone 3 notebook containing data integration and verification.
+- **data/raw/:** Contains the original Academy Award data and source documentation.
+- **data/raw/SOURCES.md:** Documents the original data sources and provenance.
+- **assignments/labs/:** Contains course lab notebooks and skills exercises.
+- **.gitignore:** Specifies files and folders excluded from Git tracking.
+```
 
 ## How to Run the Project
 
