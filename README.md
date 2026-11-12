@@ -1,4 +1,3 @@
-
 # Best Picture Winners vs. IMDb Ratings (2015–2024)
 
 **DSA 405: Project Synthesis | Fall 2026**  
@@ -144,65 +143,69 @@ DSA405-Project/
 
 - **README.md:** Provides the project overview, research question, data sources, findings, and instructions for reproducing the analysis.
 - **DSA405_P4_FA26_mjain23.ipynb:** The final project notebook containing data collection, cleaning, integration, verification, and analysis.
-- **DSA405_002_FA26_P1_mjain236...:** Initial project milestone documenting the original research question and project planning.
-- **DSA405_P2_AuditCleaningLog_FA26...:** Milestone 2 notebook containing data auditing, cleaning, and documentation.
-- **DSA405_002_FA26_P3_mjain23...:** Milestone 3 notebook containing data integration and verification.
+- **DSA405_002_FA26_P1_mjain236.md:** Initial project milestone documenting the original research question and project planning.
+- **DSA405_P2_AuditCleaningLog_FA26_mjain23.ipynb:** Milestone 2 notebook containing data auditing, cleaning, and documentation.
+- **DSA405_002_FA26_P3_mjain23(4).ipynb:** Milestone 3 notebook containing data integration and verification.
 - **data/raw/:** Contains the original Academy Award data and source documentation.
 - **data/raw/SOURCES.md:** Documents the original data sources and provenance.
 - **assignments/labs/:** Contains course lab notebooks and skills exercises.
 - **.gitignore:** Specifies files and folders excluded from Git tracking.
-```
 
+  
 ## How to Run the Project
 
 ### Step 1: Clone the Repository
 
-Clone the GitHub repository to your computer.
-
 ```bash
-git clone https://github.com/manika-17/dsa405-project
-cd DSA405-BestPicture-IMDb
+git clone https://github.com/manika-17/dsa405-project.git
+cd dsa405-project
 ```
 
 ### Step 2: Install Dependencies
 
 Make sure Python 3.10 or later is installed.
 
-Install the required Python packages:
+Install the required packages:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install pandas requests matplotlib jupyter nbconvert
 ```
 
 ### Step 3: Open the Jupyter Notebook
 
-Open the following notebook:
+Open `DSA405_P4_FA26_mjain23.ipynb` from the main repository directory.
 
-`DSA405_P4_FA26_mjain23.ipynb`
-
-Before downloading Wikipedia data, ensure that the `CONTACT` variable contains a valid contact email address or Wikimedia user page.
+Before running the notebook, make sure the `CONTACT` variable contains a valid contact email address or Wikimedia user page.
 
 ### Step 4: Run the Notebook
 
-Restart the Jupyter kernel and run all cells from beginning to end.
+Restart the Jupyter kernel and select **Run All Cells**.
 
-The notebook performs the following tasks:
+Alternatively, execute the notebook from the repository root:
 
-1. Downloads or loads the raw datasets.
-2. Cleans and standardizes movie information.
-3. Merges Academy Award and IMDb records.
-4. Verifies the resulting dataset.
-5. Calculates average IMDb ratings.
-6. Compares winners and nonwinners.
-7. Generates visualizations and analysis outputs.
+```bash
+jupyter nbconvert --to notebook --execute DSA405_P4_FA26_mjain23.ipynb --output P4_executed.ipynb
+```
+
+The notebook will:
+
+1. Download or load Wikipedia and IMDb data.
+2. Clean and standardize movie titles.
+3. Merge the datasets using film years and normalized titles.
+4. Verify the accuracy of the merged dataset.
+5. Calculate descriptive statistics for winners and nonwinners.
+6. Compare ratings across film years.
+7. Generate visualizations and processed data files.
 
 ### Step 5: Review the Results
 
-After execution, review the notebook outputs, generated figures, and processed data files.
+After execution, review the notebook outputs and the generated files in:
 
-The notebook includes checks designed to identify potential data integration problems.
+- `data/processed/`
+- `figures/`
 
-**Note:** IMDb datasets are large and may require significant memory and processing time. Downloaded data may also change over time, which could lead to slightly different results in future executions.
+**Note:** The IMDb datasets are large, so the first execution may require additional memory and processing time. Ratings and vote counts may change as IMDb updates its data.
+
 
 ## Reproducibility
 
@@ -210,7 +213,7 @@ The project is designed so that another user can reproduce the analysis using th
 
 The notebook includes the data preparation, merging, verification, and analysis steps necessary to trace the findings back to the source data.
 
-A successful execution from a restarted kernel should be confirmed before the final submission.
+To reproduce the results, users should restart the Jupyter kernel and execute all notebook cells in order. The notebook includes validation checks to confirm that the datasets are merged correctly and that the resulting analysis is consistent with the documented methodology.
 
 ## AI Use and Reflection
 
